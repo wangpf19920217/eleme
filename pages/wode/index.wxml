@@ -1,0 +1,14 @@
+<!--pages/wode/index.wxml-->
+<import src="index2.wxml"/>  
+<!--引入模板
+  import 引入模块 有作用域的概念 3引入2 2引入1 是可以传递data的  3直接使用1 则不行
+  另一种是includ 直接引入文本
+-->
+
+<template is="indexdata" data="{{...indexdata}}"/>
+
+<!--
+<text>{{headertxt}}</text>
+<view bindtap="viewTap"> 替换头部按钮 </view>
+-->
+

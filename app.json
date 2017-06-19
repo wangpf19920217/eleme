@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/wode/index",
+    "pages/item/index",
+    "pages/log/index",
+    "pages/option/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "我的小程序",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": "ture"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/wode/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/item/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "数据"
+      },
+      {
+        "pagePath": "pages/log/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/option/index",
+        "iconPath": "",
+        "selectedIconPath": "",
+        "text": "设置"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+<template name="indexdata">
+  <view class="header">
+    <text data-info="我是title" bindtap="titleclick">{{title}}</text>
+  </view>
+</template>
+
