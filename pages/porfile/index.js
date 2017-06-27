@@ -1,4 +1,4 @@
-// option.js
+// index.js
 Page({
 
   /**

@@ -1,1 +1,7 @@
-{}
+{
+      "navigationBarBackgroundColor": "red",
+      "navigationBarTextStyle": "red",
+      "navigationBarTitleText": "wode.json里覆盖app.json的头部",
+      "backgroundColor": "red"
+}
+

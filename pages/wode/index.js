@@ -18,16 +18,42 @@ Page({
     indexdata:{
       title:'首页'
     },
-    toView: 'red',
     scrollTop: 100,
-    headertxt:'我是头部'
+    headertxt:'我是头部',
+    imgUrls: [
+      'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+      'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000
   },
   globalData:'首页',
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('1页面加载onLoad')
+    console.log('1页面加载onLoad');
+      wx.login({
+        success: function (res) {
+          /*
+          用户允许登录后，回调内容会带上 code（有效期五分钟），开发者需要将 code 发送到开发者服务器后台，使用code 换取 session_key api，将 code 换成 openid 和 session_key
+          */ 
+          if (res.code) {
+            //发起网络请求
+            wx.request({
+              url: 'https://api.weixin.qq.com/sns/jscode2session?appid=APPID&secret=SECRET&js_code=JSCODE&grant_type=authorization_code',
+              data: {
+                code: res.code
+              }
+            })
+          } else {
+            console.log('获取用户登录态失败！' + res.errMsg)
+          }
+        }
+      });
   },
 
   /**

@@ -10,13 +10,10 @@ App({
   onLaunch: function (options) {
     //在启动时做一些初始的事情。
     //调用API从本地缓存中获取数据
-    console.log(options)
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs);
-
     wx.getUserInfo();
-    console.log(wx)
   },
   onshow: function (options){
       //做某事时。

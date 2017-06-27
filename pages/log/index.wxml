@@ -1,2 +1,4 @@
 <!--pages/log/index.wxml-->
-<text>pages/log/index.wxml</text>
+<view class="classname" wx:for="{{logs}}" wx:key="logsitem">
+  <text>{{index}}: {{item}}</text>
+</view>

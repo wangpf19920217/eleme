@@ -3,7 +3,8 @@
     "pages/wode/index",
     "pages/item/index",
     "pages/log/index",
-    "pages/option/index"
+    "pages/option/index",
+    "pages/porfile/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",
@@ -14,34 +15,40 @@
     "enablePullDownRefresh": "ture"
   },
   "tabBar": {
-    "color": "#dddddd",
-    "selectedColor": "#3cc51f",
+    "color": "#50d8fd",
+    "selectedColor": "#f7922e",
     "borderStyle": "white",
     "backgroundColor": "#ffffff",
     "list": [
       {
         "pagePath": "pages/wode/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "images/index1.png",
+        "selectedIconPath": "images/index1a.png",
         "text": "首页"
       },
       {
         "pagePath": "pages/item/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "images/index2.png",
+        "selectedIconPath": "images/index2a.png",
         "text": "数据"
       },
       {
         "pagePath": "pages/log/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "images/index3.png",
+        "selectedIconPath": "images/index3a.png",
         "text": "日志"
       },
       {
         "pagePath": "pages/option/index",
-        "iconPath": "",
-        "selectedIconPath": "",
+        "iconPath": "images/index4.png",
+        "selectedIconPath": "images/index4a.png",
         "text": "设置"
+      },
+      {
+        "pagePath": "pages/porfile/index",
+        "iconPath": "images/index5.png",
+        "selectedIconPath": "images/index5a.png",
+        "text": "个人"
       }
     ]
   }

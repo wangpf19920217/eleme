@@ -4,8 +4,19 @@
   import 引入模块 有作用域的概念 3引入2 2引入1 是可以传递data的  3直接使用1 则不行
   另一种是includ 直接引入文本
 -->
-
 <template is="indexdata" data="{{...indexdata}}"/>
+
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="indeximg">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+
 
 <!--
 <text>{{headertxt}}</text>
